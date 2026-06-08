@@ -23,6 +23,23 @@
 
 </head> 
 
+<style>
+  .item-talk .ps-summary{
+    list-style:none; cursor:pointer; display:flex; align-items:center; gap:12px;
+  }
+  .item-talk .ps-summary::-webkit-details-marker{display:none}
+  .item-talk .ps-summary .title{margin:0; flex:1}
+  .item-talk .ps-summary .ps-chev{transition:transform .3s ease}
+  .item-talk details[open] .ps-summary .ps-chev{transform:rotate(180deg)}
+  .item-talk .ps-list{margin:1rem 0 0; padding:0; list-style:none; counter-reset:p}
+  .item-talk .ps-list li{
+    padding:12px 0; border-top:1px solid #e6e4dd; display:flex; gap:12px;
+  }
+  .item-talk .ps-list .ps-num{color:#9a3b2e; font-weight:700; min-width:1.8em; text-align:right}
+  .item-talk .ps-list .ps-affil{color:#69707d}
+  .item-talk .ps-list .ps-title{display:block; margin-top:2px; font-style:italic}
+</style>
+	
 <body>    
 	<header id="header" class="header fixed-top">	    
 		<div class="branding">
